@@ -10,12 +10,11 @@ httpx
 aiohttp
 beautifulsoup4
 
-# Document processing
-markitdown[pdf]
-pypdf
-
-# Browser automation
-playwright
-
-# Database (MySQL için)
+# Database (MySQL için - CUSTOM DATABASE ONLY)
 mysql-connector-python>=8.0.33
+
+# Note: Removed heavyweight packages for Vercel deployment:
+# - playwright (170MB+ with browser binaries)
+# - markitdown[pdf] (large dependency chain)
+# - pypdf (not needed for custom DB)
+# These are only needed for public API scraping, not for custom database access
