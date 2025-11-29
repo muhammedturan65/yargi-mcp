@@ -10,8 +10,8 @@ httpx
 aiohttp
 beautifulsoup4
 
-# Database (MySQL için - CUSTOM DATABASE ONLY)
-mysql-connector-python>=8.0.33
+# Document processing (lightweight - no PDF)
+markitdown
 
-# Note: playwright removed (170MB+) - using HTTP-only scraping
-# markitdown[pdf] and pypdf removed - not needed for API access
+# Database (MySQL için)
+mysql-connector-python>=8.0.33
